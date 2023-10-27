@@ -101,7 +101,7 @@ public class CsvProcessor {
 
     public void printMedianAndAverageAges() {
         System.out.println("===================================");
-        System.out.println("\t\tMEDIAN AND AVERAGE AGES ");
+        System.out.println("\tMEDIAN AND AVERAGE AGES ");
         System.out.println("===================================");
         System.out.println();
 
@@ -118,7 +118,7 @@ public class CsvProcessor {
 
     public void printFileSummaries() {
         System.out.println("===================================");
-        System.out.println("\t\tFILE SUMMARIES ");
+        System.out.println("\tFILE SUMMARIES ");
         System.out.println("===================================");
         System.out.println();
 
@@ -148,7 +148,7 @@ public class CsvProcessor {
         long elapsedTimeMillis = elapsedTimeNano / 1000000;
 
         System.out.println("===================================");
-        System.out.println("\t\t\tMETRICS");
+        System.out.println("\t\tMETRICS");
         System.out.println("===================================");
         System.out.println();
 
