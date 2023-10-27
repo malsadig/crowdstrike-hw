@@ -9,7 +9,7 @@ import java.net.*;
 import java.util.concurrent.Callable;
 
 /***
- * This is the individual task that reads in a file concurently. This class is passed in to the ThreadPoolExecutor
+ * This is the individual task that reads in a file concurrently. This class is passed in to the ThreadPoolExecutor
  * in the CsvProcessor, and returns a CsvFile with the status of the result, as well as all the people and malformed
  * data within the file.
  */

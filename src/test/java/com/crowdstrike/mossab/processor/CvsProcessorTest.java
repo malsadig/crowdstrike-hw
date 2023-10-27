@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 public class CvsProcessorTest {
 
     @Test
-    public void testHttpsSimpons_shouldWork() {
+    public void testHttpsSimpsons_shouldWork() {
         List<String> urls = new ArrayList<>();
         urls.add("https://pastebin.com/raw/JN0qTCpZ");
 
@@ -37,7 +37,7 @@ public class CvsProcessorTest {
     }
 
     @Test
-    public void testHttpsSimponsAndSevenLocalCsvs_shouldWorkWithMalformedData() {
+    public void testHttpsSimpsonsAndSevenLocalCsvs_shouldWorkWithMalformedData() {
         System.out.println(new File("./src/data/file1.csv").getAbsolutePath());
         List<String> urls = new ArrayList<>();
         urls.add("https://pastebin.com/raw/JN0qTCpZ");

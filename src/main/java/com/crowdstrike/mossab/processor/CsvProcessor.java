@@ -32,7 +32,7 @@ public class CsvProcessor {
         // used to store all the results of the executed tasks/threads
         List<Future<CsvFile>> csvFileFutures = new ArrayList<>();
 
-        // used to calcuate the elapsed time.
+        // used to calculate the elapsed time.
         // nano time is used because discrepancies can occur when using `currentTimeMillis` - best avoided
         this.startTime = System.nanoTime();
 
@@ -159,24 +159,8 @@ public class CsvProcessor {
         System.out.println();
     }
 
-    public List<String> getUrls() {
-        return urls;
-    }
-
-    public List<Person> getPeople() {
-        return people;
-    }
-
     public List<CsvFile> getFiles() {
         return files;
-    }
-
-    public long getEndTime() {
-        return endTime;
-    }
-
-    public long getStartTime() {
-        return startTime;
     }
 
     public double getMedianAge() {

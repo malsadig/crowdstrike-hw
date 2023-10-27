@@ -118,7 +118,7 @@ I chose to code the program in Java, package it with Maven, and read in the URLS
 
 I adhered to Java conventions for the package/directory structure, the testing, and variable naming and access modifier leveling. In addition, I kept the following in mind as I coded, which reflects in how the code looks:
 
-1. **Modularity**: I used POJOs when loading the CSV data to make it easier for the human eye to follow and reason with, and I used modularized classes with discrete tasks and responsibilities  (`CsvReader` to read in a single URL, for instance) - folloiwng good OOP principles. 
+1. **Modularity**: I used POJOs when loading the CSV data to make it easier for the human eye to follow and reason with, and I used modularized classes with discrete tasks and responsibilities  (`CsvReader` to read in a single URL, for instance) - following good OOP principles. 
 2. **Simplicity**: The code is straightforward from a logical perspective and easy to follow, particularly with my use of comments and rational naming of methods & variables. This makes the code easily maintainable by others.
 3. **Concurrency**: The code reads the URLs in parallel using a `ThreadPoolExecutor` of variable size. This makes the program efficient in reading many URLs.
 4. **Testing**: I added JUnit tests in order to increase both maintainability as well as identifying any problems with the code.
@@ -139,7 +139,7 @@ I also make a number of assumptions which I've outlined below, in addition to de
 I tested the program by writing a series of JUnit tests that tested (integration testing) the various types of input that the code could receive, as well as the different paths the CSV processor could take. Below are a list of the tests I chose to write:
 
 1. `testHttpsSimpons_shouldWork`: I uploaded the simple Simpsons list to pastebin and used the provided URL to test whether my code could handle files over http(s).
-2. `testHttpsSimponsAndSevenLocalCsvs_shouldWorkWithMalformedData`: I then included the 7 local files provided by Crowdstrike. This tested files with some malformed data, valid files, empty files (or files with no valid data), with up to 10K entries in a file.
+2. `testHttpsSimponsAndSevenLocalCsvs_shouldWorkWithMalformedData`: I then included the 7 local files provided by CrowdStrike. This tested files with some malformed data, valid files, empty files (or files with no valid data), with up to 10K entries in a file.
 3. `testNullUrl_shouldNotWork`: Tested a null/empty URL, which should not work.
 4. `testMalformedOrInvalidFile_shouldNotWork`: Tested a malformed file name that would fail to retrieve.
 5. `testMalformedUrl_shouldNotWork`: Tested a malformed URL that should fail to retrieve with an IO exception.
